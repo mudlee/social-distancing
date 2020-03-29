@@ -654,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: STORY
+  m_text: SOLIDARITY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 95cbb5e1d4a7c4e21a3661f83dde159f, type: 2}
   m_sharedMaterial: {fileID: 7045674732274865094, guid: 95cbb5e1d4a7c4e21a3661f83dde159f,
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 955950925}
-    characterCount: 5
+    characterCount: 10
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
