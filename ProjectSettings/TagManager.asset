@@ -57,6 +57,9 @@ TagManager:
   - name: Dot
     uniqueID: 249487349
     locked: 0
+  - name: Line
+    uniqueID: 1056438403
+    locked: 0
   - name: Granny
     uniqueID: 3764289085
     locked: 0

@@ -188,7 +188,7 @@ public class GameController : MonoBehaviour
 
     private int GetMaxMovementPoints()
     {
-        return _shops.Length * 2 + 3;
+        return _shops.Length * 2 + 2;
     }
 
     private void UpdateGrannyInfo(GrannyController granny)

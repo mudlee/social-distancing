@@ -14,7 +14,7 @@ public class GrannyController : MonoBehaviour
 
     private static int DOT_COUNTER = 0;
     private static float SPEED = 2.5f;
-    
+
     private int _id;
     private List<DotEntry> _dots = new List<DotEntry>();
     private SAP2DAgent _sAP2DAgent;
