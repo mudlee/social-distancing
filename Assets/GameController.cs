@@ -84,7 +84,14 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        SceneManager.LoadScene(CalculateInfectionRate() > 60f ? "GameOver": "Won");
+        if(CalculateInfectionRate() > 60f)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     private void UpdateInfectionRate()
@@ -181,7 +188,7 @@ public class GameController : MonoBehaviour
 
     private int GetMaxMovementPoints()
     {
-        return _shops.Length * 2 + 2;
+        return _shops.Length * 2 + 3;
     }
 
     private void UpdateGrannyInfo(GrannyController granny)

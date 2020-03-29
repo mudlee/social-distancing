@@ -63,3 +63,6 @@ TagManager:
   - name: Snow
     uniqueID: 1106923193
     locked: 0
+  - name: Skull
+    uniqueID: 1599810219
+    locked: 0

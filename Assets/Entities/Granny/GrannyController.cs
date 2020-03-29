@@ -10,6 +10,7 @@ public class GrannyController : MonoBehaviour
     public GameObject _moveDotPrefab;
     public Sprite _selectedSprite;
     public Sprite _idleSprite;
+    public GameObject _infectedSprite;
 
     private static int DOT_COUNTER = 0;
     private static float SPEED = 2.5f;
@@ -63,6 +64,12 @@ public class GrannyController : MonoBehaviour
         Selected(false);
         _animator.SetBool("Walking", true);
         _onItsWay = true;
+
+        if (_infected)
+        {
+            _infectedSprite.SetActive(true);
+        }
+
         Debug.Log(string.Format("Granny-{0} started moving as infected: {1}",_id,_infected));
         Move();
     }
@@ -105,6 +112,10 @@ public class GrannyController : MonoBehaviour
     public void Infect()
     {
         _infected = true;
+        if(_onItsWay)
+        {
+            _infectedSprite.SetActive(true);
+        }
         EventManager.TriggerEvent(EventManager.Event.GRANNY_INFECTED);
     }
 
