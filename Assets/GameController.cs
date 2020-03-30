@@ -54,9 +54,13 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        ListenMouseClick();
         ListenInputs();
         WachResult();
+    }
+
+    private void FixedUpdate()
+    {
+        ListenMouseClick();
     }
 
     public void RemoveTip()
